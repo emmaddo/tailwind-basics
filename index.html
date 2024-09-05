@@ -23,6 +23,14 @@
         </div>
     </div>
 
+    <div class="md:hidden w-full">
+        <div id="mobile-menu" class="hidden flex flex-col items-center bg-blue-600 text-white">
+            <a href="#" class="hover:underline py-2">Home</a>
+            <a href="#" class="hover:underline py-2">About Us</a>
+            <a href="#" class="hover:underline py-2">Contact Us</a>
+        </div>
+    </div>
+
     <div class="bg-blue-600 max-w-md w-[90%] h-[400px] p-5 rounded shadow-lg">
         <div class="text-center mb-4">
             <img src="logo.png" alt="Logo" class="mx-auto w-16 h-16 mb-2">
@@ -40,21 +48,12 @@
     </div>
 
     <script>
-        // JavaScript to handle menu toggle
         const menuButton = document.getElementById('menu-button');
-        const menu = document.getElementById('menu');
-    
+        const mobileMenu = document.getElementById('mobile-menu');
+
         menuButton.addEventListener('click', () => {
-            // Toggle the display of the menu
-            if (menu.classList.contains('hidden')) {
-                menu.classList.remove('hidden');
-                menu.classList.add('flex'); // Show the menu as a flex container
-            } else {
-                menu.classList.remove('flex');
-                menu.classList.add('hidden'); // Hide the menu
-            }
+            mobileMenu.classList.toggle('hidden');
         });
     </script>
-    
 </body>
 </html>
