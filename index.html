@@ -40,7 +40,21 @@
     </div>
 
     <script>
-        // JavaScript to handle menu toggle will be added in the next steps
+        // JavaScript to handle menu toggle
+        const menuButton = document.getElementById('menu-button');
+        const menu = document.getElementById('menu');
+    
+        menuButton.addEventListener('click', () => {
+            // Toggle the display of the menu
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex'); // Show the menu as a flex container
+            } else {
+                menu.classList.remove('flex');
+                menu.classList.add('hidden'); // Hide the menu
+            }
+        });
     </script>
+    
 </body>
 </html>
