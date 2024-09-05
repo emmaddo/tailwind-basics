@@ -8,17 +8,19 @@
 </head>
 <body class="flex flex-col items-center min-h-screen bg-gray-100">
      <!-- Menu starts here -->
-     <div class="text-center mb-4 w-full">
-        <button class="md:hidden text-blue-600 focus:outline-none" id="menu-button">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-            </svg>
-        </button>
-        <nav class="hidden md:flex text-blue-600 font-semibold space-x-4" id="menu">
+     <div class="text-center mb-4 w-full flex justify-between items-center">
+        <nav class="hidden md:flex justify-center text-blue-600 font-semibold space-x-4 w-full" id="menu">
             <a href="#" class="hover:underline">Home</a>
             <a href="#" class="hover:underline">About Us</a>
             <a href="#" class="hover:underline">Contact Us</a>
         </nav>
+        <div class="md:hidden flex justify-end w-full">
+            <button class="text-blue-600 focus:outline-none" id="menu-button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
     </div>
 
     <div class="bg-blue-600 max-w-md w-[90%] h-[400px] p-5 rounded shadow-lg">
